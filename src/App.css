@@ -69,10 +69,19 @@
 .description{
   display: flex;
   justify-content: center;
-  padding: 4%;
+  
+  padding: 2%;
   margin: 2%;
   font-family: 'Rowdies', sans-serif;
+  font-size: 1.3em;
   background-color: rgba(246, 229, 174, 0.5);
+}
+
+::placeholder{
+  height: 2em;
+  width:max-content;
+  font-size: 0.8em;
+  font-style: italic;
 }
 .nutritionLabel{
   display: flex;
@@ -107,5 +116,21 @@
     cursor: pointer;
   }
   button:active{
+    background-color: #ED7D31;
+  }
+
+  .table{
+    font-family: 'Rowdies', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .table td, .table th{
+    border: 1 px solid #3F2305;
+    text-align: center;
+    padding: 1%;
+  }
+
+  .table tr:nth-child(even){
     background-color: #ED7D31;
   }
